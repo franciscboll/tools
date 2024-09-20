@@ -19,20 +19,20 @@ Script: ***manage_ec2_instance.sh***
 
 allows you to manage the state of your EC2 instances by starting, stopping, or rebooting them using the AWS CLI.
 
-**Usage**
+*Usage*
 
 takes two arguments:
 
-1. **Instance ID**: The ID of the EC2 instance you want to manage.
-2. **Action**: The action to perform: `start`, `stop`, or `reboot`.
+1. Instance ID: The ID of the EC2 instance you want to manage.
+2. Action: The action to perform: `start`, `stop`, or `reboot`.
 
-**Start an EC2 instance**:
+Start an EC2 instance:
    bash ./manage_ec2_instance.sh i-1234567890abcdef0 start
 
-**Stop an EC2 instance**
+Stop an EC2 instance
    bash ./manage_ec2_instance.sh i-1234567890abcdef0 stop
 
-**Reboot an EC2 instance**
+Reboot an EC2 instance
    bash ./manage_ec2_instance.sh i-1234567890abcdef0 reboot
 
 ###### 4. List All S3 Buckets and Their Sizes
@@ -45,6 +45,6 @@ Script: ***backup_s3_bucket.sh***
 
 copies the contents of one S3 bucket to another (for backup purposes). It can be run periodically (e.g., via a cron job) to back up a bucket.
 
-**Usage**
+*Usage*
 
 Replace your-source-bucket and your-backup-bucket with the appropriate bucket names.
