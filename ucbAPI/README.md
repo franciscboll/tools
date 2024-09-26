@@ -10,7 +10,7 @@ Prerequisites
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 - Usage:
-./get_env_vars.sh *Project Name* *Target ID*
+./get_env_vars.sh *ProjectName* *TargetID*
 
 This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
@@ -25,7 +25,7 @@ Prerequisites
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 - Usage: 
-./set_env_vars.sh *Project Name* *Target ID*
+./set_env_vars.sh *ProjectName* *TargetID*
 
 
 ###### 3. Fetch Unity Cloud Build Information
@@ -52,7 +52,7 @@ Prerequisites
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 - Usage:
-./unity_cloud_build_info.sh *Project Name*
+./unity_cloud_build_info.sh *ProjectName*
 
 
 ###### 5.  Fetch Build Target and Their Settings
@@ -66,4 +66,4 @@ Prerequisites
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 - Usage: 
-./get_target_settings.sh *Project Name* *Target ID*
+./get_target_settings.sh *ProjectName* *TargetID*
