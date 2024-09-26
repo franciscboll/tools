@@ -47,4 +47,6 @@ copies the contents of one S3 bucket to another (for backup purposes). It can be
 
 *Usage*
 
-Replace your-source-bucket and your-backup-bucket with the appropriate bucket names.
+To run the script, pass the bucket names as arguments:
+
+./backup_s3_bucket.sh your-source-bucket your-backup-bucket

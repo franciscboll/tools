@@ -1,8 +1,14 @@
 #!/bin/bash
 
-# Variables
-source_bucket="your-source-bucket"
-backup_bucket="your-backup-bucket"
+# Check if the required arguments are provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <source_bucket> <backup_bucket>"
+    exit 1
+fi
+
+# Variables from arguments
+source_bucket=$1
+backup_bucket=$2
 current_date=$(date +'%Y-%m-%d')
 
 # Check if the backup bucket exists, create if it doesn't
