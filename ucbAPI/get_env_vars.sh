@@ -94,3 +94,8 @@ get_project_id "$PROJECT_NAME"
 
 # Get build target env vars
 get_build_target_env_vars "$API_TOKEN" "$ORG_ID" "$PROJECT_ID" "$TARGET_ID"
+
+# Print the retrieved environment variables
+    echo -e "\nCopying env_vars into envvarsfile.txt:"
+    ENV_VARS=$(echo "$ENV_VARS" | jq .)
+    echo "$ENV_VARS" > envvarsfile.txt
