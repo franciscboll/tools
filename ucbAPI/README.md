@@ -9,8 +9,8 @@ Prerequisites
 - API Token: You need a valid Unity Cloud Build API token.
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
-- Usage:
-./get_env_vars.sh *ProjectName* *TargetID*
+Usage:
+- ./get_env_vars.sh *ProjectName* *TargetID*
 
 This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
@@ -24,8 +24,8 @@ Prerequisites
 - API Token: You need a valid Unity Cloud Build API token.
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
-- Usage: 
-./set_env_vars.sh *ProjectName* *TargetID*
+Usage: 
+- ./set_env_vars.sh *ProjectName* *TargetID*
 
 
 ###### 3. Fetch Unity Cloud Build Information
@@ -37,8 +37,8 @@ Prerequisites
 - API Token: You need a valid Unity Cloud Build API token.
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
-- Usage: 
-./get_all_projects.sh
+Usage: 
+- ./get_all_projects.sh
 
 
 ###### 4. Fetch Build Targets for a Unity Project
@@ -51,8 +51,8 @@ Prerequisites
 - API Token: You need a valid Unity Cloud Build API token.
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
-- Usage:
-./unity_cloud_build_info.sh *ProjectName*
+Usage:
+- ./unity_cloud_build_info.sh *ProjectName*
 
 
 ###### 5.  Fetch Build Target and Their Settings
@@ -65,5 +65,5 @@ Prerequisites
 - API Token: You need a valid Unity Cloud Build API token.
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
-- Usage: 
-./get_target_settings.sh *ProjectName* *TargetID*
+Usage: 
+- ./get_target_settings.sh *ProjectName* *TargetID*
