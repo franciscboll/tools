@@ -1,4 +1,4 @@
-# AWS CLI Automation Scripts
+# AWS CLI Scripts
 
 This folder contains shell scripts designed to interact with your AWS account using the AWS CLI. These scripts can automate monitoring tasks such as checking the state of EC2 instances, retrieving billing data, and more.
 
