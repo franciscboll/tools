@@ -1,0 +1,4 @@
+config.env
+setEnvVars.sh
+setTargetEnvVars.sh 
+updateSettings.sh 
