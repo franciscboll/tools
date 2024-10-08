@@ -23,8 +23,7 @@ Script: ***get_target_env_vars.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve environment variables for specific build targets associated with a project.
 
-Usage:
-```bash ./get_target_env_vars.sh ProjectName TargetID```
+```Usage: bash ./get_target_env_vars.sh ProjectName TargetID```
 
 ##### This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
@@ -34,8 +33,7 @@ Script: ***set_target_env_vars.sh***
 
 ##### This script updates the environment variables for a specified build target in a Unity Cloud Build (UCB) project. It retrieves the project ID based on the provided project name and uploads the modified environment variables defined in a text file called "envvarsfile.txt".
 
-Usage: 
-```bash ./set_target_env_vars.sh *ProjectName* *TargetID*```
+```Usage: bash ./set_target_env_vars.sh *ProjectName* *TargetID*```
 
 ## Build Target and Project Information
 ##### Scripts for retrieving information about projects, build targets, and their settings.
@@ -46,8 +44,7 @@ Script: ***get_all_projects.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display information about the projects associated with a specific organization.
 
-Usage: 
-```bash ./set_target_env_vars.sh ProjectName TargetID```
+ ```Usage: bash ./set_target_env_vars.sh ProjectName TargetID```
 
 
 ###### 4. Fetch Build Targets for a Unity Project
@@ -55,17 +52,15 @@ Script: ***get_project_targets***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets associated with a specified project.
 
-Usage:
-```bash ./unity_cloud_build_info.sh *ProjectName*```
+```Usage: bash ./unity_cloud_build_info.sh *ProjectName*```
 
 
 ###### 5.  Fetch Build Target and Their Settings
 Script: ***get_project_target_settings.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets and their settings for specified projects.
-
-Usage: 
-```bash ./get_target_settings.sh *ProjectName* *TargetID*```
+ 
+```Usage: bash ./get_target_settings.sh *ProjectName* *TargetID*```
 
 ## Build Triggering and Management
 ##### Scripts to trigger new builds or stop ongoing ones in Unity Cloud Build.
@@ -75,10 +70,9 @@ Usage:
 
 ##### This script interacts with the Unity Cloud Build API to trigger or stop builds for specific projects and build targets. It supports triggering new builds with clean options and stopping ongoing builds by build number.
 
-**Usage:**
 - To trigger a build:
-```bash ./trigger_or_stop_build.sh trigger ProjectName EnvironmentOrTarget SpecificBuildTarget```
+```Usage: bash ./trigger_or_stop_build.sh trigger ProjectName EnvironmentOrTarget SpecificBuildTarget```
 
 - To stop a build: 
-```bash ./trigger_or_stop_build.sh stop ProjectName EnvironmentOrTarget SpecificBuildTarget BuildNumber```
+```Usage: bash ./trigger_or_stop_build.sh stop ProjectName EnvironmentOrTarget SpecificBuildTarget BuildNumber```
 
