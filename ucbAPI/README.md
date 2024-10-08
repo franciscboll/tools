@@ -1,5 +1,7 @@
 # UCB API scripts
 
+This repository contains a collection of bash scripts designed to interact with the Unity Cloud Build (UCB) API. These scripts simplify various tasks related to managing build targets, environment variables, and project settings within the UCB ecosystem. Whether you need to fetch environment variables, trigger new builds, or stop ongoing ones, these scripts streamline the process and provide easy access to essential functionality.
+
 ###### 1. Fetch Environment Variables for a Build Target
 Script: ***get_target_env_vars.sh***
 
