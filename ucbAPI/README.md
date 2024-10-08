@@ -2,6 +2,10 @@
 
 This repository contains a collection of bash scripts designed to interact with the Unity Cloud Build (UCB) API. These scripts simplify various tasks related to managing build targets, environment variables, and project settings within the UCB ecosystem. Whether you need to fetch environment variables, trigger new builds, or stop ongoing ones, these scripts streamline the process and provide easy access to essential functionality.
 
+##### Prerequisites
+##### - API Token: You need a valid Unity Cloud Build API token.
+##### - jq: These scripts uses jq for parsing JSON. Ensure it is installed on your system.
+
 ### Table of Contents
 1. [Environment Variables Management](#environment-variables-management)
    - Fetch and update environment variables for build targets.
@@ -19,24 +23,16 @@ Script: ***get_target_env_vars.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve environment variables for specific build targets associated with a project.
 
-##### Prerequisites
-##### - API Token: You need a valid Unity Cloud Build API token.
-##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
-
 Usage:
 ```bash ./get_target_env_vars.sh ProjectName TargetID```
 
-This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
+##### This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
 
 ###### 2. Update Unity Cloud Build Target Environment Variables
 Script: ***set_target_env_vars.sh***
 
 ##### This script updates the environment variables for a specified build target in a Unity Cloud Build (UCB) project. It retrieves the project ID based on the provided project name and uploads the modified environment variables defined in a text file called "envvarsfile.txt".
-
-##### Prerequisites
-##### - API Token: You need a valid Unity Cloud Build API token.
-##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage: 
 ```bash ./set_target_env_vars.sh *ProjectName* *TargetID*```
@@ -50,10 +46,6 @@ Script: ***get_all_projects.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display information about the projects associated with a specific organization.
 
-##### Prerequisites
-##### - API Token: You need a valid Unity Cloud Build API token.
-##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
-
 Usage: 
 ```bash ./set_target_env_vars.sh ProjectName TargetID```
 
@@ -63,11 +55,6 @@ Script: ***get_project_targets***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets associated with a specified project.
 
-##### Prerequisites
-
-##### - API Token: You need a valid Unity Cloud Build API token.
-##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
-
 Usage:
 ```bash ./unity_cloud_build_info.sh *ProjectName*```
 
@@ -76,11 +63,6 @@ Usage:
 Script: ***get_project_target_settings.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets and their settings for specified projects.
-
-##### Prerequisites
-
-##### - API Token: You need a valid Unity Cloud Build API token.
-##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage: 
 ```bash ./get_target_settings.sh *ProjectName* *TargetID*```
@@ -92,10 +74,6 @@ Usage:
 **Script:** ***trigger_or_stop_build.sh***
 
 ##### This script interacts with the Unity Cloud Build API to trigger or stop builds for specific projects and build targets. It supports triggering new builds with clean options and stopping ongoing builds by build number.
-
-**Prerequisites**
-##### - **API Token:** You need a valid Unity Cloud Build API token.
-##### - **jq:** This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 **Usage:**
 - To trigger a build:
