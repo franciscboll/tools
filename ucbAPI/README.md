@@ -24,7 +24,7 @@ Script: ***get_target_env_vars.sh***
 ##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage:
-- ./get_target_env_vars.sh *ProjectName* *TargetID*
+```bash ./get_target_env_vars.sh ProjectName TargetID```
 
 This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
@@ -39,7 +39,7 @@ Script: ***set_target_env_vars.sh***
 ##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage: 
-- ./set_target_env_vars.sh *ProjectName* *TargetID*
+```bash ./set_target_env_vars.sh *ProjectName* *TargetID*```
 
 ## Build Target and Project Information
 ##### Scripts for retrieving information about projects, build targets, and their settings.
@@ -55,7 +55,7 @@ Script: ***get_all_projects.sh***
 ##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage: 
-- ./get_all_projects.sh
+```bash ./set_target_env_vars.sh ProjectName TargetID```
 
 
 ###### 4. Fetch Build Targets for a Unity Project
@@ -69,7 +69,7 @@ Script: ***get_project_targets***
 ##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage:
-- ./unity_cloud_build_info.sh *ProjectName*
+```bash ./unity_cloud_build_info.sh *ProjectName*```
 
 
 ###### 5.  Fetch Build Target and Their Settings
@@ -83,7 +83,7 @@ Script: ***get_project_target_settings.sh***
 ##### - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage: 
-- ./get_target_settings.sh *ProjectName* *TargetID*
+```bash ./get_target_settings.sh *ProjectName* *TargetID*```
 
 ## Build Triggering and Management
 ##### Scripts to trigger new builds or stop ongoing ones in Unity Cloud Build.
@@ -99,8 +99,8 @@ Usage:
 
 **Usage:**
 - To trigger a build:
-./trigger_or_stop_build.sh trigger ProjectName EnvironmentOrTarget SpecificBuildTarget
+```bash ./trigger_or_stop_build.sh trigger ProjectName EnvironmentOrTarget SpecificBuildTarget```
 
 - To stop a build: 
-./trigger_or_stop_build.sh stop ProjectName EnvironmentOrTarget SpecificBuildTarget BuildNumber 
+```bash ./trigger_or_stop_build.sh stop ProjectName EnvironmentOrTarget SpecificBuildTarget BuildNumber```
 
