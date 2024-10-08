@@ -33,7 +33,7 @@ Script: ***set_target_env_vars.sh***
 
 ##### This script updates the environment variables for a specified build target in a Unity Cloud Build (UCB) project. It retrieves the project ID based on the provided project name and uploads the modified environment variables defined in a text file called "envvarsfile.txt".
 
-```Usage: bash ./set_target_env_vars.sh *ProjectName* *TargetID*```
+```Usage: bash ./set_target_env_vars.sh ProjectName TargetID```
 
 ## Build Target and Project Information
 ##### Scripts for retrieving information about projects, build targets, and their settings.
@@ -52,7 +52,7 @@ Script: ***get_project_targets***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets associated with a specified project.
 
-```Usage: bash ./unity_cloud_build_info.sh *ProjectName*```
+```Usage: bash ./unity_cloud_build_info.sh ProjectName```
 
 
 ###### 5.  Fetch Build Target and Their Settings
@@ -60,7 +60,7 @@ Script: ***get_project_target_settings.sh***
 
 ##### This script interacts with the Unity Cloud Build API to retrieve and display the build targets and their settings for specified projects.
  
-```Usage: bash ./get_target_settings.sh *ProjectName* *TargetID*```
+```Usage: bash ./get_target_settings.sh ProjectName TargetID```
 
 ## Build Triggering and Management
 ##### Scripts to trigger new builds or stop ongoing ones in Unity Cloud Build.
