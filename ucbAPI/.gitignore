@@ -1,4 +1,5 @@
 config.env
 setTargetEnvVars.sh 
+get_active_builds.sh
 updateSettings.sh 
 envvarsfile.txt

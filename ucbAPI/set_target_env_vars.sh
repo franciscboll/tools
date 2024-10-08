@@ -61,13 +61,17 @@ REQUEST_URL="$API_ENDPOINT/orgs/$ORG_ID/projects/$PROJECT_ID/buildtargets/$TARGE
 # Read the modified environment variables from the file
 MODIFIED_ENV_VARS=$(<envvarsfile.txt)
 
-# Make PUT request to update environment variables
+# Make PUT request to update environment variables and capture the response
 echo -e "\nUploading modified environment variables..."
-curl -X PUT -H "$AUTH_HEADER" -H "Content-Type: application/json" -d "$MODIFIED_ENV_VARS" "$REQUEST_URL"
+RESPONSE=$(curl -X PUT -H "$AUTH_HEADER" -H "Content-Type: application/json" -d "$MODIFIED_ENV_VARS" "$REQUEST_URL" -s)
 
 # Check if the request was successful
 if [ $? -eq 0 ]; then
     echo "Environment variables updated successfully."
+
+    # Print the JSON response with line breaks after each comma
+    echo "Response from server:"
+    echo "$RESPONSE" | jq -r 'to_entries | map("\(.key): \(.value)") | .[]' | awk '{print $0","}'
 else
     echo "Failed to update environment variables."
 fi
