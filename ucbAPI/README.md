@@ -10,7 +10,7 @@ Prerequisites
 - jq: This script uses jq for parsing JSON. Ensure it is installed on your system.
 
 Usage:
-- ./get_taret_env_vars.sh *ProjectName* *TargetID*
+- ./get_target_env_vars.sh *ProjectName* *TargetID*
 
 This script automatically generates a file called "envvarsfile.txt" with the fetched variables, which can be used to manually change and push the env vars to the desired projects with the ***set_env_vars.sh*** script.
 
