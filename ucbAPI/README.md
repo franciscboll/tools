@@ -76,3 +76,6 @@ Script: ***get_project_target_settings.sh***
 - To stop a build: 
 ```Usage: bash ./trigger_or_stop_build.sh stop ProjectName EnvironmentOrTarget SpecificBuildTarget BuildNumber```
 
+- Example: bash trigger_or_stop_build.sh trigger Fentanyl ios ios-gateway
+
+
