@@ -3,7 +3,7 @@
 # Fetch cost data grouped by service
 
 # Specify start and end dates for the report
-START_DATE=$(date -d "2024-09-01" '+%Y-%m-%d')
+START_DATE=$(date -d "2024-11-01" '+%Y-%m-%d')
 END_DATE=$(date '+%Y-%m-%d')
 
 # Fetch cost data grouped by service
